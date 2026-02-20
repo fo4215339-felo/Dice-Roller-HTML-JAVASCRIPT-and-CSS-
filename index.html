@@ -1,0 +1,40 @@
+<!DOCTYPE html> <!-- Declares HTML5 document type -->
+
+<html lang="en"> <!-- Root element of the page (English language) -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive on mobile -->
+
+    <title>Dice Roller</title> <!-- Title shown on browser tab -->
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">   
+</head>
+
+<body>
+
+<!-- Main container for the dice roller -->
+<div id="container">
+
+    <h1>Dice Roller</h1> <!-- Page heading -->
+
+    <!-- Label for input field -->
+    <label># of dice</label>
+
+    <!-- Input field where user enters number of dice -->
+    <input type="number" value="1" min="1" id="numofDice">
+
+    <!-- Button that calls the rolldice() function when clicked -->
+    <button onclick="rolldice()">Roll Dice</button>
+
+    <!-- Area where dice results will be displayed -->
+    <div id="diceResult"></div>
+
+</div>
+
+<!-- Link to external JavaScript file -->
+<script src="index1.js"></script>
+
+</body>
+</html>
